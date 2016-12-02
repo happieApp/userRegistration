@@ -6,48 +6,51 @@
     <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link href="plugins/loader/dist/loading.min.css" rel="stylesheet" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="plugins/loader/dist/jquery.loading.min.js"></script>
     <title>Happie App Registration Form</title>
 </head>
 
 <body>
     <header>
-        <h3 class="header">Register & Download</h3> </header>
+        <h3 class="header">Register &amp; Download</h3> </header>
     <div class="login">
-        <div class='errorMsg'>
-            <h2 class="error"></h2>
+        <div>
+            <div class='errorMsg'>
+                <h2 class="error"></h2>
+            </div>
+            <form id="myform" method="post" action="">
+                <!--  <label>Username :</label> -->
+                <div class="userCntnr">
+                    <i class="fa fa-user" aria-hidden="true" id="userIcon"></i>
+                    <input type="text" name="username" id="username" placeholder="username" />
+                </div>
+                <!--  <label>E-Mail :</label> -->
+                <div>
+                    <i class="fa fa-envelope" aria-hidden="true" id="userIcon"></i>
+                    <input type="email" name="email" id="email" placeholder="@-mail" />
+                </div>
+                <!--  <label>Phone Number :</label> -->
+                <div>
+                    <i class="fa fa-mobile" aria-hidden="true" id="userIcon"></i>
+                    <input type="text" name="mobile" id="mobile" placeholder="mobile" />
+                </div>
+                <!--          <label>Password :</label> -->
+                <div>
+                    <i class="fa fa-unlock-alt" aria-hidden="true" id="userIcon"></i>
+                    <input type="password" name="password" id="password" placeholder="Password" />
+                </div>
+                <!--   <label> Confirm Password :</label> -->
+                <div>
+                    <i class="fa fa-unlock-alt" aria-hidden="true" id="userIcon"></i>
+                    <input type="password" name="cnfrmPasswrd" placeholder="confirm Password" />
+                </div>
+                <button type="submit" class="btnSignup" id="sgnupbtn">Sign Up</button>
+            </form>
         </div>
-        <form id="myform" method="post" action="">
-            <!--  <label>Username :</label> -->
-            <div class="userCntnr">
-                <i class="fa fa-user" aria-hidden="true" id="userIcon"></i>
-                <input type="text" name="username" id="username" placeholder="username" />
-            </div>
-            <!--  <label>E-Mail :</label> -->
-            <div>
-                <i class="fa fa-envelope" aria-hidden="true" id="userIcon"></i>
-                <input type="email" name="email" id="email" placeholder="@-mail" />
-            </div>
-            <!--  <label>Phone Number :</label> -->
-            <div>
-                <i class="fa fa-mobile" aria-hidden="true" id="userIcon"></i>
-                <input type="text" name="mobile" id="mobile" placeholder="mobile" />
-            </div>
-            <!--          <label>Password :</label> -->
-            <div>
-                <i class="fa fa-unlock-alt" aria-hidden="true" id="userIcon"></i>
-                <input type="password" name="password" id="password" placeholder="Password" />
-            </div>
-            <!--   <label> Confirm Password :</label> -->
-            <div>
-                <i class="fa fa-unlock-alt" aria-hidden="true" id="userIcon"></i>
-                <input type="password" name="cnfrmPasswrd" placeholder="confirm Password" />
-            </div>
-            <button type="submit" class="btnSignup" id="sgnupbtn">Sign Up</button>
-        </form>
     </div>
-    <div id="create"></div>
     <script type="text/javascript" src="js/index.js"></script>
 </body>
 
