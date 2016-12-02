@@ -72,10 +72,6 @@ $(document).ready(function() {
             "playerId": ""
 
         };
-        $.each($('#myform').serializeArray(), function(i, field) {
-            values[field.name] = field.value;
-        });
-
 
 
         if (username || mobile || email || password != "") {
